@@ -1,11 +1,9 @@
 ## Getting and Cleaning Data Project
 
 ### Overview
-The script merges and cleans training data, writing it out to a file tidy_data.txt
+The script merges and cleans training data, writing it out to a file tidy_data.txt  The raw data needed for the script be found at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-A full description is available at the site where the data was obtained: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
-
-The raw data can be found at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+A full description of the data is available at the site where the data was obtained: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
 ### Script Summary
 Summary of the project instructions from the assignment:
