@@ -1,3 +1,5 @@
+# Getting and Cleaning Data project
+
 setwd("K:/Development/rstudio/_coursera/GettingAndCleaningData/UCI HAR Dataset")
 library(plyr)
 
@@ -17,9 +19,9 @@ features <- read.table("./features.txt")
 meanStdIndices <- grep("mean\\(\\)|std\\(\\)", features[, 2])
 mergeData <- mergeData[, meanStdIndices]
 names(mergeData) <- gsub("\\(\\)", "", features[meanStdIndices, 2])
+names(mergeData) <- gsub("-", "", names(mergeData))
 names(mergeData) <- gsub("mean", "Mean", names(mergeData))
 names(mergeData) <- gsub("std", "Std", names(mergeData))
-names(mergeData) <- gsub("-", "", names(mergeData))
 
 # 3. Uses descriptive activity names to name the activities in the data set
 activity <- read.table("./activity_labels.txt")
